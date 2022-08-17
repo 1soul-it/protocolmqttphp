@@ -1,6 +1,6 @@
 <?php
    $awal = microtime(true);
-    $konek = mysqli_connect("localhost", "root", "", "mqtt");
+    $konek = mysqli_connect("localhost", "root", "123", "mqtt");
     if(!$konek) {
         die("Koneksi gagal:". mysqli_connect_error());
     }
