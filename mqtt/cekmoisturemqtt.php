@@ -1,6 +1,6 @@
 <?php
  
-    $konek = mysqli_connect("localhost", "root", "", "mqtt");
+    $konek = mysqli_connect("localhost", "root", "123", "mqtt");
 
     //baca data dari database
     $sql = mysqli_query($konek, "select * from mqtt_tabel order by id desc"); //data terakhir akan berada diatas
