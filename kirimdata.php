@@ -1,7 +1,7 @@
 <?php
 $awal = microtime(true);
 //koneksi ke database
-$konek = mysqli_connect("localhost", "root", "" ,"mqtt");
+$konek = mysqli_connect("localhost", "root", "123" ,"mqtt");
 
 //baca data yang dikirim esp32
 $suhu =$_GET['suhu'];
@@ -34,7 +34,7 @@ for ($c=1; $c<=10000000; $c++)
    $konversi3 = number_format($lama3, 2);
 
 //mengembalikan id menjadi 1 jika kosong
-mysqli_query($konek, "ALTER TABLE tb_sensor AUTO_INCREMENT=1");
+mysqli_query($konek, "ALTER TABLE http_tabel AUTO_INCREMENT=1");
 //simpan data sensor ke table tb_sensor
 
 $simpan = mysqli_query($konek, "INSERT INTO http_tabel(suhu,kelembabanU,kelembabanT,respon_suhu,respon_kelembabanU,respon_kelembabanT)
