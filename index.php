@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Blank</title>
+    <title>Protocol Mqtt</title>
     <script type="text/javascript" src="js/jquery.min.js"></script>
 
     <script type="text/javascript">
@@ -347,7 +347,7 @@ document.getElementById("tgl2").innerHTML = today;
       }  
       setInterval(function(){   
            autoSave(); 
-           }, 5000);  
+           }, 600000);  
   
  </script>
  
