@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Blank</title>
+    <title>Protocol Http</title>
     <script type="text/javascript" src="js/jquery.min.js"></script>
 
     <script type="text/javascript">
@@ -26,7 +26,7 @@
           $("#respon_suhu").load('./http/respon_suhu.php');
           $("#respon_kelembabanU").load('./http/respon_kelembabanU.php');
           $("#respon_kelembabanT").load('./http/respon_kelembabanT.php');
-        }, 5000);
+        }, 1000);
 
       });
     </script>
