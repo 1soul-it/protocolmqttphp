@@ -1,6 +1,6 @@
  
  <?php  
- $connect = mysqli_connect("localhost", "root", "", "mqtt");
+ $connect = mysqli_connect("localhost", "root", "123", "mqtt");
  if(isset($_POST["SUHU"]) && isset($_POST["HUMIDITY"]) && isset($_POST["MOISTURE"]) && isset($_POST["RESPON_SUHU"]) && isset($_POST["RESPON_KELEMBABAN"]) && isset($_POST["RESPON_MOISTURE"]))
  {
   $suhu = mysqli_real_escape_string($connect, $_POST["SUHU"]);
